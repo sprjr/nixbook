@@ -30,9 +30,10 @@ echo "Powerwashing NixBook..."
 
   # Add flathub and some apps
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-  flatpak install flathub com.google.Chrome -y
-  flatpak install flathub us.zoom.Zoom -y
-  flatpak install flathub org.libreoffice.LibreOffice -y
+  flatpak install flathub org.mozilla.firefox -y
+  flatpak install flathub io.github.dgsasha.Remembrance -y
+  flatpak install flathub com.usebottles.bottles -y
+  flatpak install flathub com.vixalien.sticky -y
   
   reboot
 else
