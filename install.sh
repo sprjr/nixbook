@@ -26,8 +26,11 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   sudo nixos-rebuild switch
 
   # Add flathub and some apps
-  #flatpak install flathub com.google.Chrome -y
-  
+  flatpak install flathub org.mozilla.firefox -y
+  flatpak install flathub io.github.dgsasha.Remembrance -y
+  flatpak install flathub com.usebottles.bottles -y
+  flatpak install flathub com.vixalien.sticky -y
+
   reboot
 else
   echo "Nixbook Install Cancelled!"
